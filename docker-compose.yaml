@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  emojiapp:
+    build:
+      context: '.'
+      dockerfile: Dockerfile
+    ports:
+      - 5000:5000
+    image: spygram/emojipedia:latest
+    container_name: emojipedia_app
